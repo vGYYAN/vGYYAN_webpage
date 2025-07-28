@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>vGYYAN.ai – Section 2</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fdfdfd;
+      overflow-x: hidden;
+    }
+
+    .section-2 {
+      padding-top: 7rem;
+      background: radial-gradient(circle at 10% 30%, #cce9f9 0%, transparent 20%),
+                  radial-gradient(circle at 60% 40%, #cce9f9 0%, transparent 40%),
+                  radial-gradient(circle at 50% 70%, #c2f8e4 0%, transparent 30%),
+                  #f9f9f9;
+    }
+
+    .poster-row {
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+    }
+
+    .poster-row + .poster-row {
+      margin-top: 2rem;
+    }
+
+    .poster-track {
+      display: inline-flex;
+      width: max-content;
+      animation: scroll-left 44s linear infinite;
+    }
+
+    .poster-row:nth-child(2) .poster-track {
+      animation: scroll-right 40s linear infinite;
+    }
+
+    .poster-row:hover .poster-track {
+      animation-play-state: paused;
+    }
+
+    .poster {
+      position: relative;
+      flex: 0 0 auto;
+      height: 180px;
+      aspect-ratio: 3 / 4;
+      margin-right: 1.5rem;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .poster-row:nth-child(2) .poster {
+      height: 240px;
+    }
+
+    .poster img {
+      height: 100%;
+      width: auto;
+      display: block;
+    }
+
+    .poster:hover::after {
+      content: attr(data-info);
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      font-size: 0.85rem;
+      padding: 0.3rem;
+      text-align: center;
+    }
+/*
+    @keyframes scroll-left {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }*/
+    @keyframes scroll-left {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    
+    @keyframes scroll-right {
+      0% { transform: translateX(-50%); }
+      100% { transform: translateX(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="section-2">
+    <!-- Row 1 -->
+    <div class="poster-row">
+      <div class="poster-track">
+        <!-- Original Posters -->
+        <!-- START OF SEQUENCE -->
+        <div class="poster" data-info="Class 3 - English"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_3_English.jpg" /></div>
+        <div class="poster" data-info="Class 3 - Hindi"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_3_Hindi.jpg" /></div>
+        <div class="poster" data-info="Class 4 - English"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/refs/heads/main/Class_4_English.webp" /></div>
+        <div class="poster" data-info="Class 4 - EVS"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_4_Evs.jpg" /></div>
+        <div class="poster" data-info="Class 4 - Hindi"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_4_Hindi.jpg" /></div>
+        <div class="poster" data-info="Class 5 - English"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_5_English.jpg" /></div>
+        <div class="poster" data-info="Class 5 - EVS"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_5_Evs.jpg" /></div>
+        <div class="poster" data-info="Class 5 - Hindi"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_5_Hindi.jpg" /></div>
+        <div class="poster" data-info="Class 6 - Hindi"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_6_Hindi.jpg" /></div>
+        <div class="poster" data-info="Class 6 - SST"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_6_SST.jpg" /></div>
+
+        <!-- Duplicate Posters for Seamless Loop -->
+        <div class="poster" data-info="Class 3 - English"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_3_English.jpg" /></div>
+        <div class="poster" data-info="Class 3 - Hindi"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_3_Hindi.jpg" /></div>
+        <div class="poster" data-info="Class 4 - English"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/refs/heads/main/Class_4_English.webp" /></div>
+        <div class="poster" data-info="Class 4 - EVS"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_4_Evs.jpg" /></div>
+        <div class="poster" data-info="Class 4 - Hindi"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_4_Hindi.jpg" /></div>
+        <div class="poster" data-info="Class 5 - English"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_5_English.jpg" /></div>
+        <div class="poster" data-info="Class 5 - EVS"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_5_Evs.jpg" /></div>
+        <div class="poster" data-info="Class 5 - Hindi"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_5_Hindi.jpg" /></div>
+        <div class="poster" data-info="Class 6 - Hindi"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_6_Hindi.jpg" /></div>
+        <div class="poster" data-info="Class 6 - SST"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_6_SST.jpg" /></div>
+        <!-- END OF SEQUENCE -->
+      </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="poster-row">
+      <div class="poster-track">
+        <!-- START OF SEQUENCE -->
+        <div class="poster" data-info="Class 7 - English"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_7_English.jpg" /></div>
+        <div class="poster" data-info="Class 7 - Hindi"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_7_Hindi.jpg" /></div>
+        <div class="poster" data-info="Class 7 - SST"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/refs/heads/main/Class_7_SST.webp" /></div>
+        <div class="poster" data-info="Class 7 - Science"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_7_Science.png" /></div>
+        <div class="poster" data-info="Class 8 - English"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/refs/heads/main/Class_8_English.webp" /></div>
+        <div class="poster" data-info="Class 8 - Geography"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_8_Geography.jpg" /></div>
+        <div class="poster" data-info="Class 8 - History"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/refs/heads/main/Class_8_History.webp" /></div>
+        <div class="poster" data-info="Class 8 - Political Science"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_8_Political_Science.jpg" /></div>
+        <div class="poster" data-info="Class 8 - Science"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_8_Science.jpg" /></div>
+        <div class="poster" data-info="Class 9 - Economics"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_9_Economics.jpg" /></div>
+        <div class="poster" data-info="Class 9 - English"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_9_English.jpg" /></div>
+        <div class="poster" data-info="Class 9 - Geography"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/refs/heads/main/Class_9_Geography.webp" /></div>
+        <div class="poster" data-info="Class 9 - History"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_9_History.jpg" /></div>
+        <div class="poster" data-info="Class 9 - Political Science"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/refs/heads/main/Class_9_Political_Science.webp" /></div>
+        <div class="poster" data-info="Class 9 - Science"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_9_Science.jpg" /></div>
+
+        <!-- Duplicates for seamless loop -->
+        <div class="poster" data-info="Class 7 - English"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_7_English.jpg" /></div>
+        <div class="poster" data-info="Class 7 - Hindi"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_7_Hindi.jpg" /></div>
+        <div class="poster" data-info="Class 7 - SST"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/refs/heads/main/Class_7_SST.webp" /></div>
+        <div class="poster" data-info="Class 7 - Science"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_7_Science.png" /></div>
+        <div class="poster" data-info="Class 8 - English"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/refs/heads/main/Class_8_English.webp" /></div>
+        <div class="poster" data-info="Class 8 - Geography"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_8_Geography.jpg" /></div>
+        <div class="poster" data-info="Class 8 - History"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/refs/heads/main/Class_8_History.webp" /></div>
+        <div class="poster" data-info="Class 8 - Political Science"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_8_Political_Science.jpg" /></div>
+        <div class="poster" data-info="Class 8 - Science"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_8_Science.jpg" /></div>
+        <div class="poster" data-info="Class 9 - Economics"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_9_Economics.jpg" /></div>
+        <div class="poster" data-info="Class 9 - English"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_9_English.jpg" /></div>
+        <div class="poster" data-info="Class 9 - Geography"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/refs/heads/main/Class_9_Geography.webp" /></div>
+        <div class="poster" data-info="Class 9 - History"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_9_History.jpg" /></div>
+        <div class="poster" data-info="Class 9 - Political Science"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/refs/heads/main/Class_9_Political_Science.webp" /></div>
+        <div class="poster" data-info="Class 9 - Science"><img src="https://raw.githubusercontent.com/vGYYAN/Sec_2_Image/main/Class_9_Science.jpg" /></div>
+        <!-- END OF SEQUENCE -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>
